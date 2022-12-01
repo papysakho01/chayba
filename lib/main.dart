@@ -1,3 +1,4 @@
+import 'package:emart_app/services/firestore_services.dart';
 import 'package:emart_app/views/splash_screen/splash_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -15,6 +16,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Get.lazyPut(() => FirestoreServices());
+
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: appname,

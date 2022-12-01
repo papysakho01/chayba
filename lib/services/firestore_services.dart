@@ -1,6 +1,6 @@
 import 'package:emart_app/consts/consts.dart';
 
-class FirestoreSerices {
+class FirestoreServices {
   static getUser(uid) {
     return firestore
         .collection(usersCollection)

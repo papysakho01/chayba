@@ -21,7 +21,7 @@ class ProfileScreen extends StatelessWidget {
     return bgWidget(
       child: Scaffold(
           body: StreamBuilder(
-              stream: FirestoreSerices.getUser(currentUser!.uid),
+              stream: FirestoreServices.getUser(currentUser!.uid),
               builder: (BuildContext context,
                   AsyncSnapshot<QuerySnapshot> snapshot) {
                 if (!snapshot.hasData) {
@@ -61,12 +61,12 @@ class ProfileScreen extends StatelessWidget {
                                 child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                "${data['name']}"
+                                "${data[name]}"
                                     .text
                                     .fontFamily(semibold)
                                     .white
                                     .make(),
-                                "${data['email']}".text.white.make(),
+                                "${data[email]}".text.white.make(),
                               ],
                             )),
                             OutlinedButton(

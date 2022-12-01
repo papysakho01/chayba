@@ -19,11 +19,12 @@ class _SplashScreenState extends State<SplashScreen> {
     Future.delayed(Duration(seconds: 3), () {
       // Get.to(() => LoginScreen());
       auth.authStateChanges().listen((User? user) {
-        if (user == null && mounted) {
-          Get.to(() => LoginScreen());
-        } else {
-          Get.to(() => Home());
-        }
+        Get.to(() => LoginScreen());
+        // if (user == null && mounted) {
+        //   Get.to(() => LoginScreen());
+        // } else {
+        //   Get.to(() => Home());
+        // }
       });
     });
   }
