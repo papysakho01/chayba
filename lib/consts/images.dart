@@ -130,3 +130,4 @@ const imgStripe = "assets/images/stripe.png";
 const imgTwocheckout = "assets/images/twocheckout.png";
 const imgVogue = "assets/images/vogue.png";
 const imgWallet = "assets/images/wallet.png";
+const casque = "assets/images/casque-de-protection-jaune.jpg";

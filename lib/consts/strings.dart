@@ -8,7 +8,7 @@ const passwordHint = "*******";
 const retypePassword = "Retype password";
 const loggedin = "Connexion reussite !";
 const loggedout = "Vous etes deconnecte(e)";
-const name = "Name";
+const name = "name";
 const nameHint = "Baba Male";
 const forgetPass = "Mot de passe oublié";
 const login = "Se connecter";
@@ -53,4 +53,25 @@ const video = "Video",
     supportPolicy = "Support",
     prodmaylike = "Les articles qui peuvent vous interesse";
 
-const wishlist = "Mes favoris", orders = "Mes commandes", message = "Messages";
+const wishlist = "Mes favoris",
+    orders = "Mes commandes",
+    message = "Messages",
+    cart_count = "cart_count",
+    order_count = "order_count",
+    oldpass = "Ancien mot de passe",
+    newpass = "Nouveau mot de passe",
+    imageUrl = "imageUrl",
+    wishlist_count = "wishlist_count";
+
+const p_category = "p_category",
+    p_desc = "p_desc",
+    p_imgs = "p_imgs",
+    p_name = "p_name",
+    p_price = "p_price",
+    p_quantity = "p_quantity",
+    p_seller = "p_seller",
+    p_rating = "p_rating",
+    p_subcategory = "p_subcategory",
+    p_wishlist = "p_wishlist",
+    vendor_id = "vendor_id",
+    p_colors = "p_colors";

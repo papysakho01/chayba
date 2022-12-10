@@ -1,0 +1,60 @@
+{
+    "categories":[
+        {
+            "name" : "EPI",
+            "subcategory": [
+                "Casques",
+                "Chaussures",
+                "Gilets",
+                "Masques",
+                "Autres"
+            ]
+        },
+        {
+            "name" : "Fournitures",
+            "subcategory": [
+                "Tout"
+            ]
+        },
+        {
+            "name" : "Imprimerie",
+            "subcategory": [
+                "Tout"
+            ]
+        },
+        {
+            "name" : "Cadeaux d'entreprise",
+            "subcategory": [
+                "Tout"
+            ]
+        },
+        {
+            "name" : "Consommables Informatique",
+            "subcategory": [
+                "Tout"
+            ]
+        },
+        {
+            "name" : "Materiel Informatique",
+            "subcategory": [
+                "Tout",
+                "Ordinateur",
+                "Telephone",
+                "Tablettes",
+                "Autres"
+            ]
+        },
+        {
+            "name" : "Froid et climatisation",
+            "subcategory": [
+                "Tout"
+            ]
+        },
+        {
+            "name" : "Nettoiement et entretien",
+            "subcategory": [
+                "Tout"
+            ]
+        }
+    ]
+}

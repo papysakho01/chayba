@@ -43,25 +43,35 @@ class ProfileScreen extends StatelessWidget {
                               Icons.edit,
                               color: whiteColor,
                             )).onTap(() {
-                          Get.to(() => EditProfileScreen());
+                          controller.nameController.text = data['name'];
+
+                          Get.to(() => EditProfileScreen(data: data));
                         }),
                       ),
                       Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 8),
                         child: Row(
                           children: [
-                            Image.asset(imgProfile2,
-                                    width: 55, fit: BoxFit.cover)
-                                .box
-                                .roundedFull
-                                .clip(Clip.antiAlias)
-                                .make(),
+                            data['imageUrl'] == ''
+                                ? Image.asset(imgProfile2,
+                                        width: 55, fit: BoxFit.cover)
+                                    .box
+                                    .roundedFull
+                                    .clip(Clip.antiAlias)
+                                    .make()
+                                : Image.network(data['imageUrl'],
+                                        width: 55, fit: BoxFit.cover)
+                                    .box
+                                    .roundedFull
+                                    .clip(Clip.antiAlias)
+                                    .make(),
                             10.heightBox,
                             Expanded(
                                 child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 "${data[name]}"
+                                    // "Papy SAKHO"
                                     .text
                                     .fontFamily(semibold)
                                     .white
@@ -89,15 +99,15 @@ class ProfileScreen extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           detailsCart(
-                              count: "00",
+                              count: data[cart_count],
                               title: "Au panier",
                               width: context.screenWidth / 3.4),
                           detailsCart(
-                              count: "32",
+                              count: data[wishlist_count],
                               title: "Vos Favoris",
                               width: context.screenWidth / 3.4),
                           detailsCart(
-                              count: "231",
+                              count: data[order_count],
                               title: "Vos Commandes",
                               width: context.screenWidth / 3.4),
                         ],

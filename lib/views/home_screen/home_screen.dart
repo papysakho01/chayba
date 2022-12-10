@@ -39,23 +39,23 @@ class HomeScreen extends StatelessWidget {
               physics: const BouncingScrollPhysics(),
               child: Column(
                 children: [
-                  VxSwiper.builder(
-                      aspectRatio: 16 / 9,
-                      autoPlay: true,
-                      height: 150,
-                      enlargeCenterPage: true,
-                      itemCount: slidersList.length,
-                      itemBuilder: (context, index) {
-                        return Image.asset(
-                          slidersList[index],
-                          fit: BoxFit.fitWidth,
-                        )
-                            .box
-                            .rounded
-                            .clip(Clip.antiAlias)
-                            .margin(EdgeInsets.symmetric(horizontal: 8))
-                            .make();
-                      }),
+                  // VxSwiper.builder(
+                  //     aspectRatio: 16 / 9,
+                  //     autoPlay: true,
+                  //     height: 150,
+                  //     enlargeCenterPage: true,
+                  //     itemCount: slidersList.length,
+                  //     itemBuilder: (context, index) {
+                  //       return Image.asset(
+                  //         slidersList[index],
+                  //         fit: BoxFit.fitWidth,
+                  //       )
+                  //           .box
+                  //           .rounded
+                  //           .clip(Clip.antiAlias)
+                  //           .margin(EdgeInsets.symmetric(horizontal: 8))
+                  //           .make();
+                  //     }),
                   10.heightBox,
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,

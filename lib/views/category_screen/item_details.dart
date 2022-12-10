@@ -10,6 +10,7 @@ class ItemDetail extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    print(Colors.yellow.value);
     return Scaffold(
       backgroundColor: lightGrey,
       appBar: AppBar(

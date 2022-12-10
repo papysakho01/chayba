@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
       title: appname,
       theme: ThemeData(
         scaffoldBackgroundColor: Colors.transparent,
-        appBarTheme: AppBarTheme(
+        appBarTheme: const AppBarTheme(
             iconTheme: IconThemeData(color: darkFontGrey),
             elevation: 0.0,
             backgroundColor: Colors.transparent),
