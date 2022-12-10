@@ -30,12 +30,11 @@ class CategoryDetails extends StatelessWidget {
               return Center(
                 child: loadingIndicator(),
               );
-            } //else if (snapshot.data!.docs.isEmpty) {
-            // return Center(
-            //   child: "Pas de produit".text.color(darkFontGrey).make(),
-            // );
-            // }
-            else {
+            } else if (snapshot.data!.docs.isEmpty) {
+              return Center(
+                child: "Pas de produit".text.color(darkFontGrey).make(),
+              );
+            } else {
               var data = snapshot.data!.docs;
 
               return Container(
